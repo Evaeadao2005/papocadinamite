@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamite - O Homem das 1000 Vozes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> <!-- Fonte adicional -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://i.imgur.com/1gB8Yp4.jpeg') no-repeat center center fixed; /* Imagem de fundo */
+            background-size: cover; /* Cobre toda a tela */
+            color: #ff0000; /* Vermelho */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0, 0.5); /* Vermelho levemente transparente */
+            z-index: 1;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Cor branca com leve transparência */
+            border-radius: 20px; /* Bordas arredondadas */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            z-index: 2; /* Garante que fique acima do overlay */
+        }
+
+        .logo {
+            width: 100px; /* Largura da logo */
+            height: 100px; /* Altura da logo */
+            border-radius: 50%; /* Arredondar a imagem */
+            border: 5px solid #ff0000; /* Borda vermelha estilosa */
+            object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
+            margin-bottom: 20px;
+        }
+
+        .slogan {
+            font-family: 'Montserrat', sans-serif; /* Fonte mais atraente */
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold; /* Destaca a frase */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            background-color: #ff0000; /* Vermelho */
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px; /* Bordas arredondadas */
+            text-decoration: none;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #cc0000; /* Vermelho mais escuro ao passar o mouse */
+            transform: scale(1.05);
+        }
+
+        .button i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .audio-container {
+            margin: 20px 0;
+        }
+
+        .watermark {
+            font-size: 0.8em; /* Tamanho da marca d'água */
+            color: #888888; /* Cor da marca d'água */
+            opacity: 0.8; /* Aumenta a opacidade para mais destaque */
+            position: absolute;
+            bottom: 10px; /* Ajusta a posição para o fundo */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translateX(-50%); /* Corrige a centralização */
+            font-weight: bold; /* Destaca ainda mais a marca d'água */
+            z-index: 3; /* Garante que fique acima do overlay */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <img src="https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/442427632_469168232595827_766267154158310016_n.jpg?ccb=11-4&oh=01_Q5AaIL4G6sLE4d5vU6rc0_Mh793BtDE73G6TuabBJrXG7L6F&oe=67031079&_nc_sid=5e03e0&_nc_cat=109" alt="Logo do Dinamite" class="logo"> <!-- Logo atualizada -->
+        <p class="slogan">O homem das 1000 vozes!</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/558898136660?text=Olá%20Dinamite%2C%20eu%20vim%20pelo%20@victordalmon%2C%20estou%20interessado%20em%20seu%20serviço%20de%20locução." class="button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+            </a>
+            <a href="https://www.instagram.com/dinamitevozes" class="button" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="audio-container">
+            <audio controls>
+                <source src="URL_DO_AUDIO_EXEMPLO.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+        
+        <footer>
+            <p class="watermark">Criado por @victordalmon</p>
+        </footer>
+    </div>
+</body>
+</html>
